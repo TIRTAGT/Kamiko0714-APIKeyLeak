@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
             page = 1,
             size = 10,
             location = 0,
-            authorization = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c2VyLUx4TjhuYmtkWTVhaWlRbmgiLCJpYXQiOjE3MDI3MTcxNjh9.JYhJJs3yatEb1mwgHd7ttWRp3n8NFJTnns2G4iAwpm8"
+            authorization = "Bearer " +  getString(R.string.story_api_key)
         )
 
         call.enqueue(object : Callback<StoryResponse> {
